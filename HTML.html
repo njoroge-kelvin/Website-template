@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="T.K.V" content="dev">
-  <link rel="stylesheet" href="includes/css/bootstrap.css">
-  <link rel="stylesheet"
-    href="includes/fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.css">
+  <link rel="stylesheet" href="fontawesome-free-5.11.2-web/font/all.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="CSS.css">
 
   <title>My Blog</title>
@@ -16,26 +15,26 @@
 
 <body id="body">
 
-  <script>
+  <!-- <script>
     $(document).ready(function () {
       var lastScrollTop = 0;
       var $navbar = $('my_navbar');
     
-      $(window).scroll(function(event){
+      $(window).scroll(function(){
         var st = $(this).scrollTop();
     
         if (st > lastScrollTop) { // scroll down
           
-          navBar.removeClass('fixed_top');
+          navBar.removeClass('my_navbar');
 
         } else { // scroll up
-          navBar.addClass('fixed_top');
+          navBar.addClass('my_navbar');
           // use this is jQuery full is used
         }
         lastScrollTop = st;
       });
     });
-  </script>
+  </script> -->
     <!-- <script src="file:///F:/p/Node%20js/AMANDA/jquery-3.4.1.min.js">
         $(function(){
 
@@ -54,7 +53,7 @@
         });
         $function();
     </script> -->
-
+<!-- 
     <script type="text/javascript">
       $(document).ready(function($) {
       
@@ -62,11 +61,11 @@
         $('.page-navigation').onePageNav();
         
       });
-      </script>
+      </script> -->
 
-  <header class="header">
-    <nav id="my_navbar" styele="position: fixed;">
-      <i class=" fas fa-power-off logo" style="padding-top: 3rem;"></i>
+  <header class="header" style="background-image: url(images/header.JPG);">
+    <nav id="my_navbar" class="my_navbar">
+      <i class=" fas fa-power-off logo" style="opacity: 1; padding-top: 3rem;"></i>
       <i class="items fa fa-bars" id="show_menu"></i>
       <!-- <script>
         $(function () {
@@ -76,12 +75,12 @@
         });
 
       </script> -->
-      <ul class="list" id="list" style="padding: 3rem 4rem; margin: 0;">
-        <li class="items"> <a href="#about">about</a></li>
-        <li class="items"> <a href="#photos">photos</a></li>
-        <li class="items"> <a href="#events">hobbies</a></li>
-        <li class="items"> <a href="contact">events</a></li>
-        <li class="items"><button class="button" >contact</button></li>
+      <ul class="list" id="list" style="opacity: 1; padding: 3rem 4rem; margin: 0;">
+        <li id="items" class="items"> <a href="#about">about</a></li>
+        <li id="items" class="items"> <a href="#photos">photos</a></li>
+        <li id="items" class="items"> <a href="#events">hobbies</a></li>
+        <li id="items" class="items"> <a href="contact">events</a></li>
+        <li id="items" class="items"><button class="button" >contact</button></li>
       </ul>
     </nav>
 
@@ -104,29 +103,29 @@
     </p>
     <p class="about_info" style="margin-top: 15px; color: black;">With my unhealthy eating habits and the home workouts I couldnt say I have a really bad personality. I'm preety much about
       the good things in life and being an art in my favouritism. Life is all about living once so I travel, I'm sometimes a serious book-reader and 
-      love camping out or just a bask at the warm coastal beaches.
     </p>
+    love camping out or just a bask at the warm coastal beaches.
   </div>
   
   <div style="background-color: rgb(241, 248, 252);"> 
       <h1 style="padding-top: 5%; padding-bottom: 5%; " id="photos"> photos</h1>
-      <div id="carouselExampleControls" class="carousel slide" style="padding-top: 2%; padding-bottom: 10%;" data-ride="carousel">
+      <div id="carouselExampleControls" class="carousel slide" style="padding-top: 2%; padding-bottom: 10%; object-fit: cover;" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/calm.JPG" class="d-block w-100" alt="...">
+            <img src="images/bakgroun.PNG" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="images/chair.JPG" class="d-block w-100" alt="...">
+            <img src="images/hear.JPG" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="images/lis.JPG" class="d-block w-100" alt="...">
+            <img src="images/flash.JPG" class="d-block w-100" alt="...">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <a class="carousel-control-prev" style="color: black;" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleControls" style="color: black;" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -138,16 +137,15 @@
     <div class="card">
       <img src="images/hike.jpg" alt="flash image" class="background-img">
       <h1>Mara Hike</h1>
-      <hr class="rgba-white-light" style="margin: 0 25%;" >
       <p class="job-title">3 Day Tour</p>
-      <p class="about">An out with my dog for food hunting. This is my best therapy,
+      <p class="about">Went out with my dog for food hunting. This is my best therapy,
         I couldn't resist!...
       </p>
-    </div>0
+    </div>
 
 
     <div class="card">
-      <img src="images/capture.jpg" alt="flash image" class="background-img">
+      <img src="images/office.jpg" alt="flash image" class="background-img">
       <h1>Dev Fest </h1>
       <p class="job-title">Annual Summit</p>
       <p class="about">Held just 3km away from my house, how could I miss the codes 
@@ -264,10 +262,10 @@
 
   </footer>
   <!-- Footer -->
-  <script src="file:///F:/p/Node%20js/AMANDA/jquery-3.4.1.min.js"></script>
-  <script src="C:\Users\Njoro\Downloads\CombinedScroll\CombinedScroll\jquery.combinedscroll"></script>
-  <script
-    src="file:///F:/p/Node%20js/AMANDA/bootstrap-4.3.1-dist%20(1)/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-</body>
+  <script src="CombinedScroll\jquery.combinedscroll"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="jquery-3.4.1.min.js"></script>
+
+</body> 
 
 </html>

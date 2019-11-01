@@ -3,7 +3,7 @@
 
     if(isset($_POST["btn"])){
 
-        include('includes/config.php');
+        include('config.php');
 
         $email = mysqli_real_escape_string($contact, $_POST["mail"]);
         $pass = mysqli_real_escape_string($contact, $_POST["pwd"]);
@@ -20,7 +20,7 @@
         elseif(!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)){
             header('Location: login.php?error=invalidemailuid');
             exit();
-        }
+        }.
 
         elseif(!preg_match("/^[a-zA-Z0-9]*$/", $username)){
             header('Location: login.php?error=invalidusername&mail='.$email);
