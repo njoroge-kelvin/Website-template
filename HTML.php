@@ -1,7 +1,7 @@
 <?php
+  session_start();
   include('subscription.php');
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +30,7 @@
         <li id="items" class="items"> <a href="#photos">photos</a></li>
         <li id="items" class="items"> <a href="#events">hobbies</a></li>
         <li id="items" class="items"> <a href="contact">events</a></li>
-        <li id="items" class="items"><button class="button" >contact</button></li>
+        <li id="items" class="items"><button class="button" ><?php echo $_SESSION["email"]; ?></button></li>
       </ul>
     </nav>
 
@@ -119,7 +119,7 @@
   <!-- Footer -->
   <footer class="page-footer font-small indigo" id="contact">
     <div class="container" style="padding-top: 10px;">
-      <p style="font-size: 2em; color: black;  font-weight: 500; font-family: italic;"> Lets link:</p>
+      <p style="font-size: 2em; color: black;  font-weight: 500; font-family: italic;"> Stay in touch:</p>
       <div class="row text-center d-flex justify-content-center pt-5 mb-3">
 
         <div class="row icons pb-3" style="text-align: center; font-size: 2em; margin: 0 20px;">
@@ -174,7 +174,7 @@
             <!-- Form -->
             <form class="text-center" style="color: #757575;" method="POST">
 
-              <p>Stay Up To Date on Tech..</p>
+              <p>Stay Up To Date on my_events..</p>
               
               <!-- Name -->
               <div class="md-form mt-3">
@@ -206,7 +206,7 @@
 
     <hr class="clearfix d-md-none rgba-white-light" style="margin: 5% 3%;">
 
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <div class="footer-copyright text-center py-3">© 2030 Copyright:
       <a href="#"> MYBLOG.com</a>
     </div>
 
